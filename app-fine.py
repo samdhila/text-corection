@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder='./views', static_folder='./static')
 
 # Load fine-tuned IndoBERT model and tokenizer at startup
 print("Loading fine-tuned IndoBERT model...")
-model_path = './finetuned_model_25'
+model_path = 'samdhila/finetuned-indobert'
 tokenizer = BertTokenizer.from_pretrained(model_path)
 model = BertForMaskedLM.from_pretrained(model_path)
 print("Model loaded successfully.")
