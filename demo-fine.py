@@ -3,7 +3,7 @@ import torch
 import re
 
 # Load the fine-tuned IndoBERT model and tokenizer
-model_path = './finetuned_model_25'
+model_path = 'samdhila/finetuned-indobert'
 tokenizer = BertTokenizer.from_pretrained(model_path)
 model = BertForMaskedLM.from_pretrained(model_path)
 
